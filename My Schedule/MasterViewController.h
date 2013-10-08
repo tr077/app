@@ -13,7 +13,6 @@
 
 typedef void (^GetResponse)(NSArray* getResponses);
 
-
 @interface MasterViewController : UITableViewController
 {
     NSOperationQueue *queue;
