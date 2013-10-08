@@ -15,8 +15,6 @@
 // URL for the databases
 static NSString * const urlForLessons = @"http://kakis.iriscouch.com/schedule_lessons/_design/";
 static NSString * const urlForMessages = @"http://kakis.iriscouch.com/schedule_messages/_design/";
-//static NSString * const urlForLessons = @"http://127.0.0.1:5984/schedule_lessons/_design/";
-//static NSString * const urlForMessages = @"http://127.0.0.1:5984/schedule_messages/_design/";
 
 // Views for sorting lessons
 static NSString * const viewIosScheduleForWeek = @"ios_week_schedule/_list/lessons/ios_schedule_for_week";

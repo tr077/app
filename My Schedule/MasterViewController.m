@@ -13,7 +13,6 @@
 
 // Url for database
 static NSString * const urlForStudents = @"http://kakis.iriscouch.com/schedule_students/_design/_students/_list/students/students";
-//static NSString * const urlForStudents = @"http://127.0.0.1:5984/schedule_students/_design/students/_list/students/students";
 
 
 @implementation MasterViewController
