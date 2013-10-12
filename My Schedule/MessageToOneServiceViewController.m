@@ -164,8 +164,6 @@ numberOfRowsInComponent:(NSInteger)component
     } // end if
     
 }
-
-
 -(void)saveWrittenMessage:(NSString*)message
 {
         NSDictionary *messageAsJson = [self serializeMessageToJson:message];
@@ -185,24 +183,18 @@ numberOfRowsInComponent:(NSInteger)component
         NSRunLoop *loop = [NSRunLoop currentRunLoop];
         [loop run];
 }
-
-
 - (IBAction)dissmissSubjectFieldKeyboard:(id)sender
 {
     [sender resignFirstResponder];
     subject = subjectTextfield.text;
     NSLog(@"Subject was set to: %@", subject);
 }
-
-
 - (IBAction)dissmissMessageFieldKeybord:(id)sender
 {
     [sender resignFirstResponder];
     writtenMessage = messageTextfield.text;
     NSLog(@"Message was set to: %@", writtenMessage);
 }
-
-
 #pragma mark - Serializing objects to json
 
 -(id)serializeMessageToJson:(id) object
@@ -211,6 +203,4 @@ numberOfRowsInComponent:(NSInteger)component
     result = [object jsonValue];
     return result;
 }
-
-
 @end

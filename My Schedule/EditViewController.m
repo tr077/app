@@ -65,7 +65,6 @@
     cell.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"cell8"]];
     return cell;
 }
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.row == 0) {

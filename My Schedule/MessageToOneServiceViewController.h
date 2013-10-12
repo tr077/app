@@ -40,5 +40,4 @@
 //--- Send Button -------------------------------------------------------------------//
 - (IBAction)sendPrivateMessageButton:(id)sender;
 
-
 @end

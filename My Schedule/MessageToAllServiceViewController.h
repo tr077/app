@@ -41,5 +41,4 @@
 //--- Send Button --------------------------------------------------------------//
 - (IBAction)sendPublicMessageButton:(id)sender;
 
-
 @end

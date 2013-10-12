@@ -10,7 +10,6 @@
 
 @implementation Message
 
-
 - (id)init
 {
 
@@ -46,20 +45,4 @@
 {
     return 37 * [self.id hash];
 }
-
-
-//-(BOOL)isEqual:(id)message
-//{
-//    if (message == self)
-//    {
-//        return YES;
-//    }
-//    if (message && [message isMemberOfClass:[self class]])
-//    {
-//        return [[message id] isEqualToString:self.id];
-//    }
-//    return NO;
-//}
-
-
 @end

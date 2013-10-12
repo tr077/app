@@ -190,24 +190,18 @@ numberOfRowsInComponent:(NSInteger)component
     NSLog(@"Classroom was changed to: %@", subject);
 
 }
-
-
 - (IBAction)dissmissTeacherKeyboard:(id)sender
 {
     [sender resignFirstResponder];
     teacher = setTeacherTextfield.text;
     NSLog(@"Techer was changed to: %@", subject);
 }
-
-
 - (IBAction)dissmissAssignmentKeyboard:(id)sender
 {
     [sender resignFirstResponder];
     assignment = setAssignmentTextfield.text;
     NSLog(@"Assignment was changed to: %@", subject);
 }
-
-
 - (void)saveLesson:(Lesson *)lesson
 {
     NSDictionary *lessonAsJson = [self serializeLessonToJson:lesson];
@@ -227,10 +221,6 @@ numberOfRowsInComponent:(NSInteger)component
     NSRunLoop *loop = [NSRunLoop currentRunLoop];
     [loop run];
 }
-
-
-
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -243,18 +233,6 @@ numberOfRowsInComponent:(NSInteger)component
     result = [object jsonValue];
     return result;
 }
-
-//- (void)alertThatAllParametersNotAreSet
-//{
-//    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Alert"
-//                                                   message:@"Please fill in all of the required fields"
-//                                                  delegate:nil
-//                                         cancelButtonTitle:@"Ok"
-//                                         otherButtonTitles:nil];
-//    
-//    NSLog(@"Please fill in all of the required fields");
-//    [alert show];
-//}
 
 - (IBAction)saveLessonButton:(id)sender {
     

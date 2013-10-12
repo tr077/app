@@ -12,5 +12,4 @@
 @interface Lesson (Json) <JsonFormat>
 
 -(id)jsonValue;
-
 @end

@@ -67,14 +67,10 @@ static NSString * const viewObjectiveCScheduleForWeek = @"objective_c_week_sched
                                                                                      action:@selector(addNewLesson:)];
     self.navigationItem.rightBarButtonItem = addLessonButton;
 }
-
-
 - (void)viewWillDisappear:(BOOL)animated
 {
     self.navigationItem.rightBarButtonItem = nil;
 }
-
-
 - (void)viewDidLoad
 {
     editCourseView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
@@ -170,8 +166,6 @@ static NSString * const viewObjectiveCScheduleForWeek = @"objective_c_week_sched
         });
     }];
 }
-
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -181,8 +175,6 @@ static NSString * const viewObjectiveCScheduleForWeek = @"objective_c_week_sched
     }
     return self;
 }
-
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -196,20 +188,14 @@ static NSString * const viewObjectiveCScheduleForWeek = @"objective_c_week_sched
 {
     return 1;
 }
-
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return lessonSubjectTitles.count;
 }
-
-
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
     return @"Schedule";
 }
-
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
@@ -230,8 +216,6 @@ static NSString * const viewObjectiveCScheduleForWeek = @"objective_c_week_sched
     
     return cell;
 }
-
-
 - (void)tableView:(UITableView *)tableView
 didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -256,8 +240,6 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
     
     [self.navigationController pushViewController:updateController animated:YES];
 }
-
-
 - (void)addNewLesson:(id)sender
 {
     // --- Vi skapar en subvy som heter newLessonController ----- //
@@ -272,6 +254,4 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
                                              animated:YES];
     }
 }
-
-
 @end

@@ -35,6 +35,4 @@
                    type:(NSString *) type
                    week:(NSString *) week;
 
-
-
 @end

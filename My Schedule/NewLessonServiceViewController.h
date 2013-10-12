@@ -23,8 +23,6 @@
 }
 
 - (IBAction)saveLessonButton:(id)sender;
-
-
 // The course we want to create (iOS or Objective C)
 @property (nonatomic, strong) NSString *chosenLessonCourse;
 

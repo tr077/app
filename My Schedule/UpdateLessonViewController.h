@@ -53,11 +53,8 @@
 @property (nonatomic, strong) NSString *type;
 @property (nonatomic, strong) NSString *idet;
 @property (nonatomic, strong) NSString *rev;
-
-
 - (IBAction)updateButton:(id)sender;
 
 -(void)updateLesson:(Lesson*) aLesson : (NSString*)courseId : (NSString*)revNumber;
-
 
 @end

@@ -12,5 +12,4 @@
 @interface Message (Json) <JsonFormat>
 
 -(id)jsonValue;
-
 @end

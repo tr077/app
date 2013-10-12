@@ -360,6 +360,4 @@ numberOfRowsInComponent:(NSInteger)component
     result = [object jsonValue];
     return result;
 }
-
-
 @end

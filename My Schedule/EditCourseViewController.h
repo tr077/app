@@ -15,7 +15,6 @@
 
 typedef void (^GetLessonResponse)(NSArray* getLessonResponses);
 
-
 @interface EditCourseViewController : UITableViewController
 {
     NSOperationQueue *queue;

@@ -12,11 +12,9 @@
 #import "MessageToOneServiceViewController.h"
 #import "MessageToAllServiceViewController.h"
 
-
 @implementation AdminViewController
 
 @synthesize allStudents, allCourses;
-
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,18 +24,11 @@
     }
     return self;
 }
-
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"hav2"]];
-    
-    
-    // Do any additional setup after loading the view from its nib.
 }
-
-
 - (IBAction)editButton:(id)sender {
     
     if (!editController) {
@@ -46,8 +37,6 @@
     }
     [self.navigationController pushViewController:editController animated:YES];
 }
-
-
 - (IBAction)oneStudentButton:(id)sender
 {
     if (!messageToOne) {
@@ -58,8 +47,6 @@
     
     [self.navigationController pushViewController:messageToOne animated:YES];
 }
-
-
 - (IBAction)allStudentsButton:(id)sender
 {
     if (!messageToAll) {
@@ -70,6 +57,5 @@
     
     [self.navigationController pushViewController:messageToAll animated:YES];
 }
-
 
 @end

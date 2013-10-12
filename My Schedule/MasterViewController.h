@@ -35,5 +35,4 @@ typedef void (^GetResponse)(NSArray* getResponses);
 
 -(void)getAllStudentsOnCompletion:(GetResponse)response;
 
-
 @end

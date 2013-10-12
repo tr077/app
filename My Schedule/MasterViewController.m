@@ -36,8 +36,6 @@ static NSString * const urlForStudents = @"http://kakis.iriscouch.com/schedule_s
         response(getAll);
     }];
 }
-
-
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
@@ -67,8 +65,6 @@ static NSString * const urlForStudents = @"http://kakis.iriscouch.com/schedule_s
 
     weekController.title = nil;
 }
-
-
 - (void)viewDidLoad
 {
     masterView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
@@ -128,8 +124,6 @@ static NSString * const urlForStudents = @"http://kakis.iriscouch.com/schedule_s
      }];
 
 }
-
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -139,16 +133,12 @@ static NSString * const urlForStudents = @"http://kakis.iriscouch.com/schedule_s
     }
     return self;
 }
-
-
 #pragma mark - Table View
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 2;
 }
-
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     int index = 0;
@@ -164,8 +154,6 @@ static NSString * const urlForStudents = @"http://kakis.iriscouch.com/schedule_s
     }
     return index;
 }
-
-
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
     if (section == 0)
@@ -178,8 +166,6 @@ static NSString * const urlForStudents = @"http://kakis.iriscouch.com/schedule_s
     }
     return @"title for header";
 }
-
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
@@ -210,8 +196,6 @@ static NSString * const urlForStudents = @"http://kakis.iriscouch.com/schedule_s
     
     return cell;
 }
-
-
 - (void)tableView:(UITableView *)tableView
 didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -238,6 +222,5 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
         [self.navigationController pushViewController:adminController animated:YES];
     }
 }
-
 
 @end

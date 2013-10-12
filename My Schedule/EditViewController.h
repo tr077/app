@@ -13,6 +13,5 @@
     EditCourseViewController * editCourseController;
     UIView *editView;
 }
-
 @property (nonatomic, retain) UIView *editView;
 @end

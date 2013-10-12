@@ -26,6 +26,4 @@
               type:(NSString *) type
            message:(NSString *) message;
 
-
-
 @end

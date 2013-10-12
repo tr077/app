@@ -15,7 +15,6 @@
     
     return [self initWithAssignment:@"" classroom:@"" course:@"" day:@"" lessontime:@"" name:@"" subject:@"" teacher:@"" type:@"" week:@""];
 }
-
 -(id)initWithAssignment:(NSString *) assignment
 classroom:(NSString *) classroom
 course:(NSString *) course
